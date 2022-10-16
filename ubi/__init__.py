@@ -14,11 +14,7 @@ USERBOT_LOAD = []
 USERBOT_NOLOAD = []
 
 # proxy , remove if you dont need one 
-u = TelegramClient(APP_SESSION, api_id=int(API_ID), api_hash=API_HASH,
-                   connection=connection.ConnectionTcpMTProxyRandomizedIntermediate,
-                   proxy=('russia-dd.proxy.digitalresistance.dog',
-                          443, 'ddd41d8cd98f00b204e9800998ecf8427e')
-                   ).start()
+u = TelegramClient(APP_SESSION, api_id=int(API_ID), api_hash=API_HASH).start()
 
 LOG_FORMAT = "[%(asctime)s.%(msecs)03d] %(filename)s:%(lineno)s %(levelname)s: %(message)s"
 
